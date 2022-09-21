@@ -21,7 +21,7 @@ export const concurrentCalls = async (
   arrayOfURLs: string[],
   maxConcurrency: number
 ) => {
-  const dividedArray = divideArray(arrayOfURLs, maxConcurrency)
+  const dividedArray = divideArray<string>(arrayOfURLs, maxConcurrency)
   console.log(dividedArray)
   const result: any[] = []
 
